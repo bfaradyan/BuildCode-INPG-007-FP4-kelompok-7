@@ -21,7 +21,6 @@ butGetData.addEventListener("click", function(event) {
 		document.getElementById("condition").innerHTML = response.forecast.forecastday[0].day.condition.text
 		document.getElementById("temp").innerHTML = response.forecast.forecastday[0].hour[0].temp_c
 		document.getElementById("speed").innerHTML = response.forecast.forecastday[0].hour[0].wind_mph
-
 	})
 	.catch(err => {
 		alert("sorry your country and date is not defined, please try again!")
