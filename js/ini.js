@@ -24,7 +24,7 @@ inputDate.value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0'
 inputDate.min = `${lastweek.getFullYear()}-${String(lastweek.getMonth() + 1).padStart(2, '0')}-${ String(lastweek.getDate()).padStart(2, '0') }` 
 
 butGetData.addEventListener("click", function (event) { 
-	 
+
 	event.preventDefault() 
 	const ctx = document.getElementById('myChart'); 
 	const ctx2 = document.getElementById('myChart2'); 
@@ -70,7 +70,7 @@ ${date}&lang=en`, body)
 					data: { 
 						labels: jam, 
 						datasets: [{ 
-							label: 'Temperature ℃', 
+							label: 'Temperature', 
 							data: temperatur, 
 							borderWidth: 1 
 						}] 
@@ -78,7 +78,11 @@ ${date}&lang=en`, body)
 					options: { 
 						scales: { 
 							y: { 
-								beginAtZero: false 
+								beginAtZero: false, 
+								title: {
+									display: true,
+									text: '℃'
+								}
 							} 
 						} 
 					} 
@@ -89,7 +93,7 @@ ${date}&lang=en`, body)
 					data: { 
 						labels: jam, 
 						datasets: [{ 
-							label: 'Humidity %', 
+							label: 'Humidity', 
 							data: kelembaban, 
 							borderWidth: 1 
 						}] 
@@ -97,7 +101,11 @@ ${date}&lang=en`, body)
 					options: { 
 						scales: { 
 							y: { 
-								beginAtZero: false 
+								beginAtZero: false,
+								title: {
+									display: true,
+									text: "%"
+								}
 							} 
 						} 
 					} 
@@ -108,7 +116,7 @@ ${date}&lang=en`, body)
 				data: {
 					labels: jam,
 					datasets: [{
-						label: 'Wind kph',
+						label: 'Wind Speed',
 						data: angin,
 						borderWidth: 1
 					}]
@@ -116,7 +124,11 @@ ${date}&lang=en`, body)
 				options: {
 					scales: {
 						y: {
-							beginAtZero: false
+							beginAtZero: false,
+							title: {
+								display: true,
+								text: "km/h"
+							}
 						}
 					}
 				}
@@ -127,7 +139,7 @@ ${date}&lang=en`, body)
 				data: {
 					labels: jam,
 					datasets: [{
-						label: 'pressure mb',
+						label: 'Pressure',
 						data: tekanan,
 						borderWidth: 1
 					}]
@@ -135,7 +147,11 @@ ${date}&lang=en`, body)
 				options: {
 					scales: {
 						y: {
-							beginAtZero: false
+							beginAtZero: false,
+							title: {
+								display: true,
+								text: "mb"
+							}
 						}
 					}
 				}

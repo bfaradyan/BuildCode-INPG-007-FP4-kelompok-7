@@ -11,37 +11,30 @@
 </head>
 <body>
     <div class="container bg-light shadow-lg p-3 mb-5 bg-body rounded position-absolute top-50 start-50 translate-middle">
-        <div class="row g-0">
-            <div class="col-md-2">
-                <img src="./assets/scenery.jpeg" class="img-thumbnail" alt="Scenery Pic">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="container-fluid mt-4 ms-1"> 
+                    <canvas id="myChart"></canvas> 
+                    <canvas id="myChart2"></canvas> 
+                    <canvas id="myChart3"></canvas>
+                    <canvas id="myChart4"></canvas> 
+                </div> 
             </div>
-            <div class="col-md-10">
-                <div class="container-form">
+            <div class="col-md-8">
+                <div class="container">
                     <div class="input-group top-50 start-50 translate-middle">
                         <input class="form-control" type="text" id="inputCountry" placeholder="Enter country">
                         <input class="form-control" type="date" id="inputDate">
                         <button class="btn btn-outline-primary" id="butGetData">Get Data</button>
                     </div>
                 </div>
-                <div class="container-data mb-4 text-center">
+                <div class="container-data text-center">
                     <h2 class="city mt-4 mb-5">City: <span id="kota"></span></h2>
                     <h6 class="date">Date: <span id="date"></span></h6>
                     <h6 class="condition">Condition: <span id="condition"></span></h6>
                     <h6 class="temperature">Temperature: <span id="temp"></span><span>&#8451</span></h6>
                     <h6 class="windspeed">Wind Speed: <span id="speed"></span><span>km/h</span></h6>
                 </div>
-                <div> 
-                    <canvas id="myChart"></canvas> 
-                </div> 
-                <div> 
-                    <canvas id="myChart2"></canvas> 
-                </div> 
-                <div> 
-                    <canvas id="myChart3"></canvas> 
-                </div> 
-                <div> 
-                    <canvas id="myChart4"></canvas> 
-                </div> 
             </div>
         </div>
     </div>
