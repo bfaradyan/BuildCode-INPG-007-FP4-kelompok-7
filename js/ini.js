@@ -4,6 +4,25 @@ const formatTime = (timeString) => {
 	return (hour % 12 || 12) + ":" + minute + (hour < 12 ? "AM" : "PM");
 }
 
+function getLastWeeksDate() {
+	const now = new Date();
+  
+	return new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+  }
+  
+  
+  console.log(getLastWeeksDate());
+  
+
+  console.log(new Date());
+
+  function floorToNearestHour(date) {
+	date.setMinutes(0, 0, 0);
+  
+	return date;
+  }
+  
+
 const body = {
 	method: 'GET',
 	headers: {
