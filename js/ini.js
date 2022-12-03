@@ -75,7 +75,7 @@ function showLoader() {
 				datasets: [{ 
 					label: 'Temperature', 
 					data: temperatur, 
-					borderWidth: 1 
+					borderWidth: 1,
 				}] 
 			}, 
 			options: { 

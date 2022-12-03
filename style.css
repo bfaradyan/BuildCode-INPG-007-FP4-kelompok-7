@@ -1,7 +1,12 @@
+body {
+    color: white;
+    background-image: url("./assets/background.jpg");
+}
+
 .input-group {
     margin-top: 5rem;
 }
 
 .container-data {
-    margin-top: 4rem;
+    margin-top: 7rem;
 }
